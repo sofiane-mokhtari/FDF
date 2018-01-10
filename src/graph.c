@@ -41,7 +41,7 @@ int		ft_init(void *param)
 	ptr = param;
 	ptr->mlx = mlx_init();
 	ft_create_win(param, XX, YY, "test");
-	ft_print_point(param);
+	ft_print_point(ft_find_start(param));
 	mlx_key_hook(ptr->win, ft_key, param);
 	mlx_loop(ptr->mlx);
 	return (1);

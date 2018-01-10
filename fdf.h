@@ -50,6 +50,8 @@ typedef	struct	s_ptr
 	int			**tab;
 	int			tab_x;
 	int			tab_y;
+	int			x_start;
+	int			y_start;
 }				t_ptr;
 
 /* main  */

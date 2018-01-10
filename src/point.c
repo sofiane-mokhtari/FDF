@@ -12,11 +12,22 @@
 
 #include "fdf.h"
 
+void	*ft_find_start(void *param)
+{
+	t_ptr	*ptr;
+
+	ptr = param;
+	ptr->y_start = T;
+	ptr->x_start = T * ptr->tab_y + 2 * T;
+	return (param);
+}
+
+
 int		ft_print_point(void *param)
 {
+	t_ptr	*ptr;
 	int		x;
 	int		y;
-	t_ptr	*ptr;
 
 	ptr = param;
 	x = 0;
